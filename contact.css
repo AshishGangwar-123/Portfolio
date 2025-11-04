@@ -1,0 +1,82 @@
+body, html{
+    overflow-y: hidden;
+}
+:root{
+  cursor: url('rocket.png'),crosshair;
+}
+.contact-bg{
+    height: 100vh;
+    width: 100vw;
+    opacity: .3;
+   
+}
+.contact-logo{
+    
+    height: 10vh;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vw;
+    margin-top: 12vh;
+    margin-left: 5vw;
+ position: relative;
+ bottom: 800px;
+ z-index: 5;
+}
+.page-header{
+    color: #525253;
+    font-size: 3em;
+    
+   padding: 1.2em;
+}
+.top{
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+   gap: 60%;
+}
+.home{
+    color: #525253;
+    font-size: 1em;
+   padding: 1.2em;
+}
+.home {
+  background-color: #e84949;
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  margin-left: 2%;
+}
+
+.home::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease;
+}
+
+.home:hover{
+  color: #e84949;
+  
+}
+
+.home:hover::before{
+  transform: scaleX(1);
+}
+a{
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;/*dekhna hai ye*/
+    font-family: "Be Vietnam Pro", sans-serif;
+   
+}
+:root{
+    cursor: url('rocket.png'),crosshair;
+    --bg0range: #e84949; /*global variable*/
+}
+#wrapper{
+    height: 100vh;
+    overflow-y: auto;/*y direction me scroll karna hai*/
+    overflow-x: hidden;/*x direction me scroll nhi karna hai*/
+}
+.container{
+    width: 1200px;
+    margin:0 auto; /*left write dono taraf se margin le lega*/
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.logo{
+    width: 60px;
+    align-items: center;
+    justify-content: last baseline;
+}
+.logo-container{
+    display: flex;
+    justify-content: baseline;/*ye dekhna hai kaise kaam karta hai yha iska use isliye kiya gya hai kiomki UI par text upar aarha tha aur logo image niche to baseline me lane ko kiya gya*/
+    align-items: center;
+}
+.logo-text{
+    margin-left: -.4rem;/*ye logo image aur logo text k bich margin km kiya gya hai by default kitna kya hota hai dekhna hai*/
+    font-size: 50px;
+    font-weight: 700;
+    color: rgb(152, 34, 170);
+}
+.nav-items{
+    display: flex;
+    gap: 2rem;
+    padding: 0 0em;/*ye dekhna hai kaise kam karta hai*/
+
+}
+.nav-items div{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+.nav-items div{
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.nav-items div:hover{
+    transition: 0.3s ease;
+    font-weight: 550;
+}
+.hero-section{
+    position: relative;/*kionki iske child pr absolute use krna h*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+    padding-bottom: 8rem;
+
+}
+.faded-text{
+    position: absolute; /*upr ki in teen lines ki bjhe se ye text bottom par gya hai*/
+    bottom: -16%;
+     left: -5%;
+     user-select: none; /*koi select na kar paaye */
+     font-size: 7em;
+     color: rgb(231, 231,231);
+     font-weight: bold;
+     transition: all 3s;
+}
+.hero-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+
+}
+.hero-section-heading{
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+}
+
+.role{
+    color: #4e45d5;
+    font-weight: 700;
+}
+.hero-section-sub-heading{
+    font-size: 45px;
+    line-height: 45px;
+}
+.hero-section-description{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+.btn-pink {
+  background-color: #e84949;
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+
+.btn-pink::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease;
+}
+
+.btn-pink:hover{
+  color: #e84949;
+  
+}
+
+.btn-pink:hover::before{
+  transform: scaleX(1);
+}
+
+.hero-section-right{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+.user-image{
+/* filter ek baar sahi se padhna hai */
+    
+    padding: 2.5rem;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 5s linear infinite;
+}
+@keyframes scaleImage{
+0%{
+   filter: grayscale(0);
+   transform: scale(1)
+}
+50%{
+   filter: grayscale(1);
+   transform: scale(1.1);
+   box-shadow: 3px 3px 10px black
+}
+100%{
+   filter: grayscale(0);
+   transform: scale(1);
+}
+}
+.user-image img{
+  
+    width: 300px;
+}
+.icon-dots img{
+    height: 70px;
+}
+.icon-dots{
+      z-index: 9;
+      bottom: -1rem;
+      right: 0;
+      animation-name: dotsAnimation;
+      animation-duration: 5s;
+      animation-iteration-count: infinite ;
+}
+@keyframes dotsAnimation{
+    0%{
+        transform: translateY(0px)
+    }
+    50%{
+        transform: translateY(-10px)
+    }
+    100%{
+        transform: translateY(0px)
+    }
+}
+.icon-cube img{
+    height: 50px;
+}
+.icon-cube{
+    z-index: 9;
+
+    top: -2.3rem;
+    right: 1em;
+    animation-name: cubeRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes cubeRotate{
+    0%{
+        transform: rotateY(0deg) translateY(0px) ;
+    }
+    50%{
+        transform: rotateY(180deg) translateY(-5px);
+    }
+    100%{
+        transform: rotateY(360deg) translateY(0px) ;
+    }
+}
+.icon-circle img{
+    height: 25px;
+}
+.icon-circle{
+    z-index: 9;
+    left: 0;
+    bottom: 0;
+    animation-name: shakeEffect;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes shakeEffect{
+     0%{
+        left: 0 ;
+        bottom: 0;
+    }
+    50%{
+       left: 5%;
+       bottom: 10%;
+    }
+    100%{
+        left: 0 ;
+        bottom: 0;
+    }
+}
+.icon-zigzag img{
+    height: 90px;
+}
+
+.icon-zigzag{
+     top: 1em;
+    left: -0.3em;
+    z-index: 9;
+   
+    animation: zigzagAnimation 5s ease-in infinite ;
+}
+@keyframes zigzagAnimation{
+    
+    50%{
+       left: 5%;
+       top: 2%;
+    }
+  
+}
+.icon-plus img{
+    height: 25px;
+}
+.icon-plus{
+    z-index: 9;
+    top: -0.8rem;
+    left: 50%;
+    animation: shakeeffectPlus 5s ease-in infinite;
+}
+/* icon zigzag aur icon circle dono par bhi aise keval itna likhne se he lag jata */
+@keyframes shakeEffectPlus{
+    50%{
+        top: 3%;
+        left: 48%;
+    }
+}
+.action-btn{
+    display: flex;
+    gap: 5vw;
+}
+#btn2{
+    background-color: #4e49e8;
+}
+#btn2:hover{
+    color: #4e49e8;
+}
+.footer{
+    background-color: #e7e6e6;
+    height: 7vh;
+}

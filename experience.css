@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+  cursor: url('rocket.png'),crosshair;
+}
+.page-header{
+    color: #525253;
+    font-size: 3em;
+    
+   padding: 1.2em;
+}
+.top{
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+   gap: 60%;
+}
+.home{
+    color: #525253;
+    font-size: 1em;
+   padding: 1.2em;
+}
+.home {
+  background-color: #e84949;
+  width: fit-content;
+  color: white;
+  padding: 0.8rem 2.3rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  margin-left: 2%;
+}
+
+.home::before{
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: 0.5s ease;
+}
+
+.home:hover{
+  color: #e84949;
+  
+}
+
+.home:hover::before{
+  transform: scaleX(1);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.internship{
+        color: #525253;
+        font-size: 2em;
+        padding-left: 2em;
+        margin-bottom: 5vh;
+}
+span{
+    margin: 2.5em;
+    color: #525253;
+    font-size: 1.5em;
+}
+.documents{
+    align-items:center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20vw;
+}
+.offer-letter{
+    font-weight: 900;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: rgb(162, 36, 225);
+}
+.completion-certificate{
+    font-weight: 900;
+    padding: 1em;
+    border-radius: 5px;
+    background-color: rgb(126, 238, 85);
+}
