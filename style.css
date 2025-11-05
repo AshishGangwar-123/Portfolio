@@ -12,11 +12,13 @@
     --bg0range: #e84949; /*global variable*/
 }
 #wrapper{
+    
     height: 100vh;
     overflow-y: auto;/*y direction me scroll karna hai*/
     overflow-x: hidden;/*x direction me scroll nhi karna hai*/
 }
 .container{
+    
     width: 1200px;
     margin:0 auto; /*left write dono taraf se margin le lega*/
 }
@@ -28,9 +30,30 @@
 }
 
 .logo{
-    width: 60px;
+    width: 6vw;
+    margin-left: 5vw;
     align-items: center;
     justify-content: last baseline;
+    display: none;
+
+}
+.menu1{
+position: absolute;
+/* box-sizing: border-box; */
+/* margin-left: -50px; */
+    top: 10vh; 
+    left: 2vw;
+    z-index: 1;
+}
+.menu{
+    background-color: rgb(231, 231,231);
+    box-sizing: border-box;
+    border: 2px solid rgb(190, 189, 189);
+    border-radius: 5px;
+    padding: 5vw;
+    line-height: 4.5vh;
+    opacity: 0.8;
+
 }
 .logo-container{
     display: flex;
@@ -296,7 +319,223 @@ a{
 #btn2:hover{
     color: #4e49e8;
 }
-.footer{
-    background-color: #e7e6e6;
-    height: 7vh;
+
+/* ===========================
+   📱 RESPONSIVE DESIGN SECTION
+   =========================== */
+
+/* ----- For laptops and medium screens (max-width: 1200px) ----- */
+
+
+/* ----- For mobile devices (max-width: 600px) ----- */
+@media (max-width: 1300px) {
+    .logo{
+        display: block;
+    }
+  .logo-text {
+    font-size: 8vw;
+    padding-left: 10vw;
+  
+  }
+
+  .nav-items {
+    display: none;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .hero-section {
+    margin: 12vh auto;
+    padding-bottom: 1vh;
+    /* padding-left: 0; */
+    display: flex;
+    flex-direction: column;
+  }
+ .hero-section-right{
+    padding: 0 0 ;
+    margin-left:-20vw;
+    
+   
+ }
+ .hero-section-left{
+    padding: 0 0 ;
+    margin-left:-10vw;
+    width: 800px;
+   
+ }
+  .hero-section-heading {
+    font-size: 5vw;
+  }
+
+  .hero-section-sub-heading {
+    font-size: 5vw;
+    line-height: .01vh;
+  }
+
+  .hero-section-description {
+    max-width: 85vw;
+    font-size: 3vw;
+    display: inline;
+  }
+
+  .btn-pink {
+    /* align-self: center; */
+    padding: 0.6rem 1.5rem;
+    margin-left: 6vw;
+    font-size: 3vw;
+  }
+
+  .user-image img {
+    width: 180px;
+  }
+
+  .faded-text {
+    font-size: 3em;
+    opacity: 0.2;
+    left: 0;
+  }
+  .footer {
+    height: auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 14px;
+  }
 }
+@media (max-width: 500px) {
+    .logo{
+        display: block;
+    }
+  .logo-text {
+    font-size: 10vw;
+    padding-left: 16vw;
+  
+  }
+
+  .nav-items {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+
+  .hero-section {
+    margin: 12vh auto;
+    padding-bottom: 1vh;
+    /* padding-left: 0; */
+    display: flex;
+    flex-direction: column;
+  }
+ .hero-section-right{
+    padding: 0 0 ;
+    margin-left:-190vw;
+    
+   
+ }
+ .hero-section-left{
+    padding: 0 0 ;
+    margin-left:-86vw;
+    width: 800px;
+   
+ }
+  .hero-section-heading {
+    font-size: 5vw;
+  }
+
+  .hero-section-sub-heading {
+    font-size: 5vw;
+    line-height: .01vh;
+  }
+
+  .hero-section-description {
+    max-width: 85vw;
+    font-size: 3vw;
+    display: inline;
+  }
+
+  .btn-pink {
+    /* align-self: center; */
+    padding: 0.6rem 1.5rem;
+    margin-left: 6vw;
+    font-size: 3vw;
+  }
+
+  .user-image img {
+    width: 180px;
+  }
+
+  .faded-text {
+    font-size: 3em;
+    opacity: 0.2;
+    left: 0;
+  }
+  .footer {
+    height: auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 14px;
+  }
+}
+@media (max-width: 400px) {
+    .logo{
+        display: block;
+    }
+  .logo-text {
+    font-size: 10vw;
+    padding-left: 16vw;
+  
+  }
+  .nav-items {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  .hero-section {
+    margin: 12vh auto;
+    padding-bottom: 1vh;
+    /* padding-left: 0; */
+    display: flex;
+    flex-direction: column;
+  }
+ .hero-section-right{
+    padding: 0 0 ;
+    margin-left:-228vw;
+ }
+ .hero-section-left{
+    padding: 0 0 ;
+    margin-left:-90vw;
+    width: 800px;
+ }
+  .hero-section-heading {
+    font-size: 5vw;
+  }
+  .hero-section-sub-heading {
+    font-size: 5vw;
+    line-height: .01vh;
+  }
+  .hero-section-description {
+    max-width: 85vw;
+    font-size: 3vw;
+    display: inline;
+  }
+  .btn-pink {
+    /* align-self: center; */
+    padding: 0.6rem 1.5rem;
+    margin-left: 6vw;
+    font-size: 3vw;
+  }
+  .user-image img {
+    width: 180px;
+  }
+  .faded-text {
+    font-size: 3em;
+    opacity: 0.2;
+    left: 0;
+  }
+  .footer {
+    height: auto;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 14px;
+  } 
+}
+

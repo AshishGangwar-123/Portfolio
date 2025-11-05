@@ -67,3 +67,11 @@ a{
     text-decoration: none;
     color: white;
 }
+@media(max-width:900px){
+  .skill-container{
+    margin: 10vw;
+  }
+  .home{
+    margin-left: 10vw;
+  }
+}

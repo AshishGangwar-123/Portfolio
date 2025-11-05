@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@media (max-width:600px){
-    #project2{
-   float: left;
-   margin-left: 10%;
-}
-.project-skills-container{
-    position: relative;
-   bottom: 53%;
-    z-index: 10;
-}
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -69,19 +59,19 @@ html , body{
 .project-skills-container{
     position: relative;
    bottom: 18em;
-    z-index: 10;
+    z-index: 1;
 }
 .project-skill{
     height: 5vh;
     position: relative;
-    z-index: 11;
+  
     bottom: 50.5vh;
     left: 1em;
 }
 
 #project1{
     position: relative;
-    z-index: 2;
+    z-index: 1;
     margin-top: 5em;
     margin-left: 10%;
     height: 40vh;
@@ -163,7 +153,7 @@ pre{
 }
 #project2{
     position: relative;
-    z-index: 2;
+    z-index: 1;
     float:right;
     margin-top: 5em;
    right: 10%;
@@ -289,4 +279,281 @@ pre{
 a{
     text-decoration: none;
     color: white;
+}
+
+/* ========================= */
+/* ✅ RESPONSIVE DESIGN FIXES */
+/* ========================= */
+
+/* Tablet devices */
+@media (max-width: 950px) {
+  .project-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .project-skills-container{
+    margin-top: 24.5vh;
+    position: relative;
+    bottom: 29vh;
+  }
+  .btn-pink{
+    position: relative;
+    bottom: 2.2vh;
+  }
+  .project-card{
+    margin-left: 47vw;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 500px) {
+  html, body {
+    overflow-x: hidden;
+  }
+ .project-container{
+  height: 100vh;
+ }
+  .project-section {
+
+    padding-bottom: 20vh;
+  }
+
+  .page-header {
+    font-size: 1.8em;
+    padding: 0.5em;
+  }
+
+  .home {
+    font-size: 0.9em;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+ .project-content{
+  width: 100vw;
+
+ }
+ .project1BG, .project2BG{
+  width: 80vw;
+  
+ }
+#project2{
+justify-content: start;
+} 
+  .project-number {
+    font-size: 2em;
+    left: 0;
+    bottom: 0.5em;
+  }
+
+  pre {
+    font-size: 1.8em;
+  }
+
+  .project-skills-container {
+   
+    position: relative;
+    bottom: 72vh;
+    left: -2vw;
+    z-index: 100;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  
+  .project-skill {
+    height: 30px;
+  }
+
+  .btn-pink {
+    position: relative;
+    bottom: 30vh;
+    left: -18vw;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  #btn-grp1, #btn-grp2 {
+    position: relative;
+    text-align: center;
+  }
+
+  .projectcard1hovercolor{
+    font-size: 1em;
+  background: #000;
+    padding: 1.5em;
+  }
+}
+
+
+/* Mobile devices */
+@media (max-width: 450px) {
+  html, body {
+    overflow-x: hidden;
+  }
+ .project-container{
+  height: 100vh;
+ }
+  .project-section {
+
+    padding-bottom: 20vh;
+  }
+
+  .page-header {
+    font-size: 1.8em;
+    padding: 0.5em;
+  }
+
+  .home {
+    font-size: 0.9em;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+ .project-content{
+  width: 100vw;
+
+ }
+ .project1BG, .project2BG{
+  width: 80vw;
+  
+ }
+#project2{
+justify-content: start;
+} 
+  .project-number {
+    font-size: 2em;
+    left: 0;
+    bottom: 0.5em;
+  }
+
+  pre {
+    font-size: 1.8em;
+  }
+
+  .project-skills-container {
+   
+    position: relative;
+    bottom: 45vh;
+    left: -2vw;
+    z-index: 100;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  
+  .project-skill {
+    height: 30px;
+  }
+
+  .btn-pink {
+    position: relative;
+    bottom: 11vh;
+    left: -18vw;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  #btn-grp1, #btn-grp2 {
+    position: relative;
+    text-align: center;
+  }
+
+  .projectcard1hovercolor,
+  .projectcard2hovercolor {
+    font-size: 1em;
+    padding: 1.5em;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 400px) {
+  html, body {
+    overflow-x: hidden;
+  }
+ .project-container{
+  height: 100vh;
+ }
+  .project-section {
+
+    padding-bottom: 20vh;
+  }
+
+  .page-header {
+    font-size: 1.8em;
+    padding: 0.5em;
+  }
+
+  .home {
+    font-size: 0.9em;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+  }
+ .project-content{
+  width: 100vw;
+
+ }
+ .project1BG, .project2BG{
+  width: 80vw;
+  
+ }
+#project2{
+justify-content: start;
+} 
+  .project-number {
+    font-size: 2em;
+    left: -7vw;
+    bottom: 8.5vh;
+  }
+
+  pre {
+    font-size: 1.8em;
+  }
+
+  .project-skills-container {
+   
+    position: relative;
+    bottom: 51vh;
+    left: -2vw;
+    z-index: 100;
+    justify-content: center;
+    gap: 0.5em;
+  }
+
+  
+  .project-skill {
+    height: 30px;
+  }
+
+  .btn-pink {
+    position: relative;
+    bottom: 15vh;
+    left: -18vw;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  #btn-grp1, #btn-grp2 {
+    position: relative;
+    text-align: center;
+  }
+
+  .projectcard1hovercolor {
+    font-size: 1em;
+    padding: 1.5em;
+    background: #ab3939;
+  }
 }

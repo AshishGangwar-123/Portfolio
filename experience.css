@@ -9,7 +9,7 @@
     color: #525253;
     font-size: 3em;
     
-   padding: 1.2em;
+   padding: 1.1em;
 }
 .top{
     flex-wrap: wrap;
@@ -31,6 +31,7 @@
   font-weight: 700;
   position: relative;
   z-index: 1;
+  margin-bottom: 6vh;
   margin-left: 2%;
 }
 
@@ -64,11 +65,20 @@ a{
 .internship{
         color: #525253;
         font-size: 2em;
-        padding-left: 2em;
+        padding-left: 1em;
+        /* justify-content: center; */
         margin-bottom: 5vh;
 }
+.workshop{
+        color: #525253;
+        font-size: 2em;
+        padding-left: 1em;
+        margin-bottom: 2vh;
+        margin-top: 10vh;
+}
+
 span{
-    margin: 2.5em;
+   padding-left: 1.5em;
     color: #525253;
     font-size: 1.5em;
 }
@@ -76,7 +86,7 @@ span{
     align-items:center;
     flex-wrap: wrap;
     display: flex;
-    gap: 20vw;
+    gap: 5vw;
 }
 .offer-letter{
     font-weight: 900;
@@ -86,7 +96,9 @@ span{
 }
 .completion-certificate{
     font-weight: 900;
-    padding: 1em;
+    padding: .8rem;
+    margin-left: 3vw;
+    margin-bottom: 5vh;
     border-radius: 5px;
     background-color: rgb(126, 238, 85);
 }
