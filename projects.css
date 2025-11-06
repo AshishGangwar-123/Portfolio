@@ -496,7 +496,7 @@ justify-content: start;
   }
 .top{
   flex-direction: column;
-  margin-top: 25vh;
+  /* margin-top: 25vh; */
 }
   .home {
     width: 52vw;
@@ -594,3 +594,4 @@ justify-content: start;
 }
 
 }
+
