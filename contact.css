@@ -12,7 +12,7 @@ body, html{
 }
 .contact-logo{
     
-    height: 10vh;
+    height: 7vh;
 }
 .container{
     display: flex;
@@ -34,7 +34,7 @@ body, html{
     flex-wrap: wrap;
     align-items: center;
     display: flex;
-   gap: 60%;
+   gap: 50%;
 }
 .home{
     color: #525253;
@@ -43,12 +43,14 @@ body, html{
 }
 .home {
   background-color: #e84949;
-  width: fit-content;
+  width: 6.5vw;
+  font-size: 0.625em;
   color: white;
   padding: 0.8rem 2.3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   position: relative;
+  
   z-index: 1;
   margin-left: 2%;
 }
@@ -79,4 +81,23 @@ body, html{
 a{
     text-decoration: none;
     color: white;
+}
+@media (max-width: 400px) {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .top{
+  flex-direction: column;
+}
+  .home {
+    width: 50vw;
+    font-size: 0.625em;
+    font-size: 0.9em;
+    padding: 0.6rem;
+    padding-left: 13vw;
+  }
+  .container{
+    margin-top: 18vh;
+  }
 }

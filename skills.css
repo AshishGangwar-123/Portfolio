@@ -20,7 +20,8 @@
 }
 .home {
   background-color: #e84949;
-  width: fit-content;
+  width: 6.5vw;
+  font-size: 0.625em;
   color: white;
   padding: 0.8rem 2.3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -73,5 +74,25 @@ a{
   }
   .home{
     margin-left: 10vw;
+  }
+}
+@media (max-width: 400px) {
+  html, body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .top{
+  flex-direction: column;
+}
+  .home {
+    width: 50vw;
+    font-size: 0.625em;
+    font-size: 0.9em;
+    padding: 0.6rem;
+    padding-left: 13vw;
+  }
+   .skill-container{
+    padding-top: 10vh;
+    margin: 3vw;
   }
 }

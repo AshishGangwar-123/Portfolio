@@ -41,7 +41,7 @@
 position: absolute;
 /* box-sizing: border-box; */
 /* margin-left: -50px; */
-    top: 10vh; 
+    top: 6vh; 
     left: 2vw;
     z-index: 1;
 }
@@ -482,6 +482,7 @@ a{
   .logo-text {
     font-size: 10vw;
     padding-left: 16vw;
+    display: none;
   
   }
   .nav-items {
@@ -504,6 +505,7 @@ a{
     padding: 0 0 ;
     margin-left:-90vw;
     width: 800px;
+    margin-top: -8vh;
  }
   .hero-section-heading {
     font-size: 5vw;
@@ -528,8 +530,8 @@ a{
   }
   .faded-text {
     font-size: 3em;
-    opacity: 0.2;
-    left: 0;
+    opacity: 1;
+    left: 6.5vw;
   }
   .footer {
     height: auto;

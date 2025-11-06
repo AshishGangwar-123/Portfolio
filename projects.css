@@ -234,7 +234,8 @@ pre{
     flex-wrap: wrap;
     align-items: center;
     display: flex;
-   gap: 60%;
+
+   gap: 50%;
 }
 .home{
     color: #525253;
@@ -243,16 +244,17 @@ pre{
 }
 .home {
   background-color: #e84949;
-  width: fit-content;
+  width: 11.5vw;
+  font-size: 0.625em;
   color: white;
   padding: 0.8rem 2.3rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 700;
   position: relative;
+  
   z-index: 1;
   margin-left: 2%;
 }
-
 .home::before{
   content: "";
   position: absolute;
@@ -478,6 +480,7 @@ justify-content: start;
 @media (max-width: 400px) {
   html, body {
     overflow-x: hidden;
+    overflow-y: hidden;
   }
  .project-container{
   height: 100vh;
@@ -491,8 +494,13 @@ justify-content: start;
     font-size: 1.8em;
     padding: 0.5em;
   }
-
+.top{
+  flex-direction: column;
+  margin-top: 25vh;
+}
   .home {
+    width: 52vw;
+    font-size: 0.625em;
     font-size: 0.9em;
     padding: 0.6rem 1.5rem;
   }
@@ -526,7 +534,7 @@ justify-content: start;
   .project-skills-container {
    
     position: relative;
-    bottom: 51vh;
+    bottom: 62.5vh;
     left: -2vw;
     z-index: 100;
     justify-content: center;
@@ -540,7 +548,7 @@ justify-content: start;
 
   .btn-pink {
     position: relative;
-    bottom: 15vh;
+    bottom: 22vh;
     left: -18vw;
     padding: 0.6rem 1.2rem;
     font-size: 0.8rem;
@@ -554,6 +562,35 @@ justify-content: start;
   .projectcard1hovercolor {
     font-size: 1em;
     padding: 1.5em;
+    padding-top: 8vh;
     background: #ab3939;
   }
+  .projectcard1hovercolor:hover{
+    width: 80vw;
+  }
+  .projectcard1hovercolor:hover {
+  animation: top .8s ease forwards 0s;
+}
+
+.projectcard1hovercolor:not(:hover) {
+  animation: none; /* reset when cursor leaves */
+}
+
+@keyframes top {
+  0% {
+    transform: scaleX(.8);
+    background-color: transparent;
+    opacity: 0;
+  }
+   
+
+  100% {
+    transform: scaleX(1);
+    background-color: #525253;
+    opacity: 0.5;
+  }
+
+
+}
+
 }
