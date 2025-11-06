@@ -106,7 +106,7 @@ span{
 @media (max-width: 400px) {
   html, body {
     overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
   }
   .top{
   flex-direction: column;
@@ -127,4 +127,5 @@ span{
     color: #525253;
     font-size: 1.5em;
 }
+
 }
